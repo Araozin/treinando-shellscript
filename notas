@@ -140,7 +140,11 @@ AND no shel e "-a"
 
 OU no shell e "-0"
 
-
+case
+	1)
+		echo
+	;;
+esac
 
 
 
