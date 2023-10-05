@@ -1,0 +1,147 @@
+conectar via ssh -> ssh 192.168.18.61 -l araovitor
+
+ls -> listar
+clear -> limpar
+resert -> limpar tudo ao pe da letra.
+echo -> exibir uma var ou nome na tela
+cd -> entra em uma pasta
+cd .. -> voltar um nivel
+cd - -> server para voltar ao directorio anterior
+pwd -> mostrar sua localizacao
+ls -a -> mostrar arquivos ocultos
+ls -1 -> exibir as strings de permissoes
+ls -l -> mostra arquivos longos com detalhes
+cat -> exibe oq tem dentro do arquivo
+cat -n -> numero de linhas
+chmod u=rwx -> usado para dar permissao ao usuario, permitindo a edicao do arquivo
+--- --- --- -> arquivo, rwx --- --- pode ler, editar e executar
+history -> exibir o historico de comando
+mkdir -> criar diretorios
+rm -> remover arquivos e pasta "mv pasta/arquivo.txt ."
+"mv pasta/ diretorio/"
+
+cp -> copia arquivos 
+rm -> remover um arquivo
+
+head -n 5 -> numero as linhas de um arquivo ou programa
+
+
+tails: Exibir as ultimas linhas do arquivo
+    tails -n: ultimas 5 linhas
+    tails -f: Monitorar arquivos 
+
+seq: Exibir sequencias de numeros e lacos de repeticoes
+    seq 0 1 a 10
+
+wc: Exibir numero de linhas, palavras e caracteres de arquivo
+    wc -l: apenas numero de linhas
+    wc -w: apenas numero de palavras
+    wc -m: apenas numero de caracteres
+
+tee: Gerar arquivos de log das saida de um pipe
+    tee -a: adcionar uma nova linha no log gerado
+
+date: Mostrar a hora e local
+    date -d today: Mostra um dia especifico 
+    date -d tomorrow?
+    
+rev: Reverter sequencias de caracteres
+    
+paste: Concatenar arquivos na mesma linha separado por uma lacuna
+paste usuarios.txt usuario2.txt -d"\n" >> cadastro.txt: copiar dados do user 
+    e user2 e passar para o arq cadastro! 
+
+cal:
+    mostar o calendario no terminal 
+    cal -y colocar todos os calendario do ano
+    cal -m 1 ver o mes 
+
+sort:
+    sort remover as duplicatas;
+    Organizar lista por coluna e na ordem inversa;
+        sort "nome do arquivo" -o > "novo arquivo";
+        sort -r
+        sort -k
+        sort -t: Organizar a lista de arquivos
+        sort -n: Organiar na ordem numerica 
+            
+                
+grep:
+
+sed:
+    Editor de fluxo de texto do terminal;
+    ls * [0-9].txt
+    sed -i serve para subistuir uma string por outra;
+        
+    
+xargs:
+    executar comandos se baseando em uma lista de argumentos;
+    Ex: echo "1 2 3 4 5" | xargs 
+    
+    Executa comandoss em loop sem usar lacos;
+        
+grep:
+    Pesquisar uma linha em arquivo de texto
+    grep -n "nome da palavra" "nome do arquivo"
+    grep -help
+    
+
+echo $? -> retorna valores 1 ou 0;
+
+file : Tipo de arquivo;
+
+link: criar um atalho para um arquivo, muito util. 
+    ln -s arquivoOriginal arquivoLink
+
+hard link: o i node fica o mesmo;
+
+main; obter a focumentacao dos comandos do linux com man
+
+echo ${nome~} o ~ vai transformar o primeiro caractere em maiusculo
+
+variavel no shell "var='arao'"
+
+usa if para validar um dado e retorna alguma coisa que o cliente queira
+if [ condicao ]
+then
+    senao entra aqui
+fi -> fecha a estrutura
+========================================================================
+Resumo condicionais no Shell
+
+    Comparação de strings:
+
+= (Verificar igualdade)
+
+!= (Verificar se é diferente)
+
+-n (Verifificar se é não nula)
+
+-z (Verificar se é nula)
+
+    Comparação numérica:
+
+-lt ( < Menor)
+
+-gt ( > Maior)
+
+-le ( <= Menor ou igual)
+
+-ge ( >= Maior ou igual)
+
+-eq ( = Igual)
+
+-ne (!= Diferente)
+
+==========================================================
+if elif else
+
+AND no shel e "-a"
+
+
+
+
+
+
+
+
